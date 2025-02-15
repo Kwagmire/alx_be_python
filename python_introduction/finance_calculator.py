@@ -1,9 +1,9 @@
-monthly_in = int(input("Enter your monthly income: "))
-monthly_out = int(input("Enter your total monthly expenses: "))
+monthly_income = int(input("Enter your monthly income: "))
+monthly_expenses = int(input("Enter your total monthly expenses: "))
 
-monthly_keep = monthly_in - monthly_out
+monthly_savings = monthly_income - monthly_expenses
 rate = 0.05
-annual_savings = int(monthly_keep * 12 + (monthly_keep * 12 * rate))
+annual_savings = int(monthly_savings * 12 + (monthly_savings * 12 * rate))
 
-print(f"Your monthly savings are ${monthly_keep}.")
+print(f"Your monthly savings are ${monthly_savings}.")
 print(f"Pojected savings after one year, with interest, is: ${annual_savings:d}.")
